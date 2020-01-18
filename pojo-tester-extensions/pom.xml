@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.ggl.lib-unit-test</groupId>
+		<artifactId>lib-unit-test</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.ggl.lib-unit-test.pojo-tester-extensions</groupId>
+	<artifactId>pojo-tester-extensions</artifactId>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>core</module>
+		<module>vavr</module>
+		<module>arrow-kt</module>
+	</modules>
+
+	<properties>
+		<pojo-tester.version>0.8.0-SNAPSHOT</pojo-tester.version>
+		<vavr.version>0.9.0</vavr.version>
+		<assertj-vavr.version>0.1.0</assertj-vavr.version>
+		<arrow.version>0.9.0</arrow.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>pl.pojo</groupId>
+			<artifactId>pojo-tester</artifactId>
+			<version>${pojo-tester.version}</version>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.ggl.lib-unit-test.pojo-tester-extensions</groupId>
+				<artifactId>core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.arrow-kt</groupId>
+				<artifactId>arrow-extras-data</artifactId>
+				<version>${arrow.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>io.arrow-kt</groupId>
+				<artifactId>arrow-validation</artifactId>
+				<version>${arrow.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>io.vavr</groupId>
+				<artifactId>vavr</artifactId>
+				<version>${vavr.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.assertj</groupId>
+				<artifactId>assertj-vavr</artifactId>
+				<version>${assertj-vavr.version}</version>
+				<scope>provided</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>
