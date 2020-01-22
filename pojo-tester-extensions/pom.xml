@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.ggl.lib-unit-test</groupId>
 		<artifactId>lib-unit-test</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
 
 	<groupId>com.ggl.lib-unit-test.pojo-tester-extensions</groupId>
@@ -20,7 +20,7 @@
 	</modules>
 
 	<properties>
-		<pojo-tester.version>0.8.0-SNAPSHOT</pojo-tester.version>
+		<pojo-tester.version>0.8.0</pojo-tester.version>
 		<vavr.version>0.9.0</vavr.version>
 		<assertj-vavr.version>0.1.0</assertj-vavr.version>
 		<arrow.version>0.9.0</arrow.version>
