@@ -2,7 +2,7 @@ package com.ggl.pojo.tester.arrow.instantiator;
 
 import arrow.core.Either;
 import arrow.core.Option;
-import arrow.data.Validated;
+import arrow.core.Validated;
 import org.assertj.core.api.AbstractBooleanAssert;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

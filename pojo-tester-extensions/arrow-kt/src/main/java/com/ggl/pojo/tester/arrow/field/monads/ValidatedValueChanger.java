@@ -1,10 +1,10 @@
 package com.ggl.pojo.tester.arrow.field.monads;
 
-import arrow.data.Validated;
+import arrow.core.Validated;
 import com.ggl.pojo.tester.arrow.field.ArrowFieldValueChanger;
 
-import static arrow.data.Validated.Invalid;
-import static arrow.data.Validated.Valid;
+import static arrow.core.Validated.Invalid;
+import static arrow.core.Validated.Valid;
 import static java.util.Objects.nonNull;
 
 public final class ValidatedValueChanger extends ArrowFieldValueChanger<Validated<?, ?>> {

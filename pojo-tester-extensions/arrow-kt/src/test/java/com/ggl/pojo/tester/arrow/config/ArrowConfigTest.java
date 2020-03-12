@@ -2,7 +2,7 @@ package com.ggl.pojo.tester.arrow.config;
 
 import arrow.core.Either;
 import arrow.core.Option;
-import arrow.data.Validated;
+import arrow.core.Validated;
 import lombok.Builder;
 import lombok.Value;
 import org.junit.jupiter.api.BeforeAll;

@@ -1,8 +1,8 @@
 package com.ggl.pojo.tester.arrow.field.monads;
 
-import arrow.data.Validated;
-import arrow.data.Validated.Invalid;
-import arrow.data.Validated.Valid;
+import arrow.core.Validated;
+import arrow.core.Validated.Invalid;
+import arrow.core.Validated.Valid;
 import lombok.val;
 import org.junit.jupiter.api.Test;
 
